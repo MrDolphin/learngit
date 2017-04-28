@@ -1,0 +1,151 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/C_F_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:text="中心频率："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView0"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <Spinner
+        android:id="@+id/C_F_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        ></Spinner>
+
+    <TextView
+        android:text="调制方式："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center_vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Modulation_spinner"
+        />
+    <Spinner
+        android:id="@+id/Modulation_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/C_F_spinner"
+        android:layout_below="@+id/C_F_spinner"
+        ></Spinner>
+
+    <TextView
+        android:text="带宽："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center_vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/B_W_spinner"
+        />
+    <Spinner
+        android:id="@+id/B_W_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Modulation_spinner"
+        android:layout_below="@+id/Modulation_spinner"
+        ></Spinner>
+
+    <TextView
+        android:text="编码率："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:gravity="center_vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/C_R_spinner"
+        />
+    <Spinner
+        android:id="@+id/C_R_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/B_W_spinner"
+        android:layout_below="@+id/B_W_spinner"
+        ></Spinner>
+
+    <TextView
+        android:text="发射功率："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:gravity="center_vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Send_spinner"
+        />
+    <Spinner
+        android:id="@+id/Send_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/C_R_spinner"
+        android:layout_below="@+id/C_R_spinner"
+        ></Spinner>
+
+    <TextView
+        android:text="等待接收延时："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:gravity="center_vertical"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Wait_spinner"
+        />
+    <Spinner
+        android:id="@+id/Wait_spinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Send_spinner"
+        android:layout_below="@+id/Send_spinner"
+        ></Spinner>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="134dp"
+        android:id="@+id/textView"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Wait_spinner"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="97dp"
+        android:id="@+id/receive" />
+
+</RelativeLayout>

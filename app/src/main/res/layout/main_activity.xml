@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<newlinerlayout.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        app:layout_widthPercent="100%"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="vertical" />
+
+    <newlinerlayout.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send" />
+    </newlinerlayout.PercentLinearLayout>
+
+    <newlinerlayout.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+            android:onClick="connect"
+            android:text="@string/connect" />
+
+        <Button
+            android:id="@+id/discoverable"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%"
+            android:layout_height="wrap_content"
+            android:onClick="discoverable"
+            android:text="@string/discoverable" />
+    </newlinerlayout.PercentLinearLayout>
+
+    <newlinerlayout.PercentLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            app:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fun_sousuo"
+            android:text="搜索模式"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            app:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fun_biaoju"
+            android:text="表具模式"
+            />
+        <Button
+            android:layout_width="0dp"
+            app:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fun_jichao"
+            android:text="集抄模式"
+            />
+        <Button
+            android:layout_width="0dp"
+            app:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:id="@+id/Fun_dandian"
+            android:text="单点模式"
+            />
+    </newlinerlayout.PercentLinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="This is a textview"/>
+
+</newlinerlayout.PercentLinearLayout>
